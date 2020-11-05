@@ -30,7 +30,8 @@ void helper(){
 					dayCount-=1;weekday+=1;weekday=weekday%7;
 				}
 			}
-			else if(month==1 and year%4==0){
+			else if(month==1 and ((year%100==0  and year%4==0) 
+				or (year%100!=0 and year%4==0))){
 				for(int i=0;i<29;i++){
 					dayCount-=1;weekday+=1;weekday=weekday%7;
 				}
